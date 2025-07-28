@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Color Palette</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .color-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .color-swatch {
+            height: 120px;
+            width: 100%;
+            position: relative;
+        }
+        
+        .color-info {
+            padding: 15px;
+            background: white;
+        }
+        
+        .color-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .color-hex {
+            color: #7f8c8d;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            margin-bottom: 3px;
+        }
+        
+        .color-rgb {
+            color: #95a5a6;
+            font-size: 0.8em;
+        }
+        
+        .description {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Green Color Palette</h1>
+        <p class="description">A collection of four green colors plus black for your design needs</p>
+        
+        <div class="palette">
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #006400;"></div>
+                <div class="color-info">
+                    <div class="color-name">DARK GREEN</div>
+                    <div class="color-hex">#006400</div>
+                    <div class="color-rgb">RGB(0, 100, 0)</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #008000;"></div>
+                <div class="color-info">
+                    <div class="color-name">GREEN</div>
+                    <div class="color-hex">#008000</div>
+                    <div class="color-rgb">RGB(0, 128, 0)</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #90EE90;"></div>
+                <div class="color-info">
+                    <div class="color-name">LIGHT GREEN</div>
+                    <div class="color-hex">#90EE90</div>
+                    <div class="color-rgb">RGB(144, 238, 144)</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #00FF00;"></div>
+                <div class="color-info">
+                    <div class="color-name">LIME</div>
+                    <div class="color-hex">#00FF00</div>
+                    <div class="color-rgb">RGB(0, 255, 0)</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #000000;"></div>
+                <div class="color-info">
+                    <div class="color-name">BLACK</div>
+                    <div class="color-hex">#000000</div>
+                    <div class="color-rgb">RGB(0, 0, 0)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
